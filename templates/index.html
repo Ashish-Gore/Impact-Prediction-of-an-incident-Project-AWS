@@ -1,0 +1,70 @@
+
+<!DOCTYPE html>
+<html >
+<!--From https://codepen.io/frytyler/pen/EGdtg-->
+<head>
+  <meta charset="UTF-8">
+  <title>Impact Prediction Project</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+  <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+  <style>
+body {
+  background-image: url('https://source.unsplash.com/yI3weKNBRTc');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+</style>
+
+
+</head>
+
+<body>
+  <div class="container-lg">
+ <div class="login">
+   <h1 style="text-align:center">Impact Prediction Project</h1>
+   <h3 style="text-align:center">By-Group 2</h3>
+
+     <!-- Main Input For Receiving Query to our ML -->
+    <form action="{{ url_for('impact')}}"method="post">
+
+
+            <div class="form-group">
+
+              ID_status:
+              <input class="form-control" type="text" name="ID_status"  required=""><br>
+
+              Count_updated:
+              <input class="form-control" type="text" name="count_updated"  required=""><br>
+
+              Opened_by:
+              <input class="form-control" type="text" name="opened_by" required=""><br>
+
+              Category_ID:
+              <input class="form-control" type="text" name="category_ID"  required=""><br>
+
+              Support_group:
+              <input class="form-control" type="text" name="Support_group" required=""><br>
+
+            </div>
+
+        <button type="submit" class="btn btn-primary btn-block btn-large">Impact</button>
+    </form>
+
+   
+   <br>
+   <h1 style="text-align:center">{{ prediction_text }}</h1>
+
+ </div>
+
+</div>
+</body>
+</html>
