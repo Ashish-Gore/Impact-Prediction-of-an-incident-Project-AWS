@@ -90,9 +90,15 @@ Please Find More Details Here: [Model Building Phase.pptx](https://github.com/As
 
 ![template1](https://github.com/Ashish-Gore/Impact-Prediction-of-an-incident-Project/blob/master/templates/SS1.JPG)
 
+- Medium Impact Output
+
 ![template1](https://github.com/Ashish-Gore/Impact-Prediction-of-an-incident-Project/blob/master/templates/SS2.JPG)
 
+- Low Impact Output
+
 ![template1](https://github.com/Ashish-Gore/Impact-Prediction-of-an-incident-Project/blob/master/templates/SS3.JPG)
+
+- High Impact Output
 
 ![template1](https://github.com/Ashish-Gore/Impact-Prediction-of-an-incident-Project/blob/master/templates/SS4.JPG)
 
