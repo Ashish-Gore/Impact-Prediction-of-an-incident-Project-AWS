@@ -85,8 +85,7 @@ Please Find More Details Here: [Model Building Phase.pptx](https://github.com/As
 - Finally Model is Deployed on AWS Cloud Platform with Flask Framework.
 
 - Link: 
-1. http://ec2-18-219-185-230.us-east-2.compute.amazonaws.com:8080/
-2. https://impact-prediction-deployment.herokuapp.com/
+1. https://impact-prediction-deployment.herokuapp.com/
 
 ![template1](https://github.com/Ashish-Gore/Impact-Prediction-of-an-incident-Project/blob/master/templates/SS1.JPG)
 
